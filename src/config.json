@@ -1,0 +1,5 @@
+﻿{
+  "API_BASE_URL": "https://jobtrackerdatamanager.azurewebsites.net",
+  "emailAddress": "admin@admin.at",
+  "password": "myP4ssword!"
+}

@@ -2,35 +2,62 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="505a6969-82ab-4de4-9941-47fe11f7a028" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/api/FetchWrapper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/useApi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/authentication/ProtectedRoute.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navigation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/context/AuthContext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Admin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/NoMatch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.job-tracker-react-ui.dir/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.job-tracker-react-ui.dir/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.job-tracker-react-ui.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.job-tracker-react-ui.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JSON File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2DU9fqGfoHwSfLKIV0L27L1kaN5" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Chris_\\AppData\\Local\\JetBrains\\Toolbox\\apps\\Rider\\ch-0\\222.3345.139\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -51,7 +78,14 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1660742905066</updated>
-      <workItem from="1660742911503" duration="517000" />
+      <workItem from="1660742911503" duration="1294000" />
+      <workItem from="1660803944850" duration="22466000" />
+      <workItem from="1660841740143" duration="163000" />
+      <workItem from="1660841975519" duration="2530000" />
+      <workItem from="1660887553811" duration="3352000" />
+      <workItem from="1660899027594" duration="2000" />
+      <workItem from="1660900113489" duration="31413000" />
+      <workItem from="1660975467104" duration="7126000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1660742975738</created>
@@ -67,7 +101,22 @@
       <option name="project" value="LOCAL" />
       <updated>1660743245298</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Adds Tailwind CSS to the Project">
+      <created>1660743457242</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1660743457242</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Adds basic Authentication using JWT and basic Routing using react-router">
+      <created>1660993647770</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1660993647770</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <option name="searchClosedTasks" value="true" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -88,6 +137,11 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Adds Tailwind CSS to the Project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adds Tailwind CSS to the Project" />
+    <MESSAGE value="Adds basic Authentication using JWT and basic Routing using react-router" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adds basic Authentication using JWT and basic Routing using react-router" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
