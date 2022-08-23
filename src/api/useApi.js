@@ -1,13 +1,12 @@
 import config from "../config.json";
 import {useEffect, useState} from "react";
 import FetchWrapper from "./FetchWrapper";
-import {useNavigate} from "react-router-dom";
+import {useLocation, useNavigate} from "react-router-dom";
 
 const api = new FetchWrapper(config.API_BASE_URL);
 
 export function useApi() {
-    const [emailAddress] = useState(config.emailAddress);
-    const [password] = useState(config.password);
+    const navigate = useNavigate();
     const [token, setToken] = useState(localStorage.getItem("token"));
     const [tokenExpiresAt, setTokenExpiresAt] = useState(localStorage.getItem("tokenExpiresAt"));
     const [refreshToken, setRefreshToken] = useState(localStorage.getItem("refreshToken"));
@@ -46,10 +45,10 @@ export function useApi() {
         console.log("Nothing is valid, logging in from scratch");
         clearTokenDetails();
 
-        return await logIn();
+        navigate("/");
     }
 
-    const logIn = async () => {
+    const logIn = async (emailAddress, password) => {
         const tokenDetails = await api.post("/token",
             {
                 emailAddress,
@@ -67,7 +66,6 @@ export function useApi() {
     }
 
     const refreshWebToken = async () => {
-        console.log("Refreshing token...");
         try {
             const tokenDetails = await api.post("/refresh-token",
                 {
@@ -87,7 +85,6 @@ export function useApi() {
     }
 
     const tokenIsValid = () => {
-        console.log(tokenExpiresAt);
         const expiresAt = new Date(Date.parse(tokenExpiresAt));
         // Subtract 1 min from the current date to avoid potential issues in the future
         const now = new Date(new Date(Date.now()).setMinutes(-1));
@@ -96,7 +93,6 @@ export function useApi() {
     }
 
     const refreshTokenIsValid = () => {
-        console.log(refreshTokenExpiresAt);
         const expiresAt = new Date(Date.parse(refreshTokenExpiresAt));
         // Subtract 1 min from the current date to avoid potential issues in the future
         const now = new Date(new Date(Date.now()).setMinutes(-1));

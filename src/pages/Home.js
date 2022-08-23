@@ -1,17 +1,15 @@
 import {useAuth} from "../context/AuthContext";
+import Login from "./Login";
 
 const Home = () => {
-    const {onLogin, isLoggedIn} = useAuth();
+    const {isLoggedIn} = useAuth();
 
     return (
-        <>
+        <div className="container mx-auto px-4">
             <h2>Home (Public)</h2>
 
-            {!isLoggedIn &&
-                <button type="button" onClick={onLogin}>
-                    Sign In
-                </button>}
-        </>
+            {!isLoggedIn && <Login/>}
+        </div>
     );
 };
 

@@ -1,23 +1,47 @@
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
 import {useApi} from "../api/useApi";
+import JobCard from "../components/JobCard";
 
 const Dashboard = () => {
     const {getJobs} = useApi();
+    const [jobs, setJobs] = useState([]);
 
     useEffect(() => {
-        const getJobsAsync = async () => {
-            const jobs = await getJobs();
-            console.log(jobs);
-        }
-        
-        getJobsAsync().then(() => true);
+        (async () => {
+            try {
+                const jobs = await getJobs();
+                setJobs(jobs);
+            } catch (e) {
+                console.log("Error catched!");
+                console.log(e);
+            }
+        })();
     }, []);
 
-    return (<>
+    // TODO: Remove this and the button on this site
+    const handleGetJobs = async (e) => {
+        e.preventDefault();
+
+        const jobs = await getJobs();
+
+        console.log(jobs);
+    }
+
+    return (
+        <div className="container mx-auto px-4 bg-blue-200">
             <h2>Dashboard (Protected)</h2>
 
-            <div>Authenticated as random user</div>
-        </>);
+            <button className="bg-amber-300 rounded p-4" onClick={handleGetJobs}> Load Jobs</button>
+
+            {jobs &&
+                <ul>
+                    {jobs.map((job, index) => {
+                        return <JobCard {...job} key={index} />
+                    })}
+                </ul>
+            }
+        </div>
+    );
 };
 
 export default Dashboard;

@@ -4,7 +4,6 @@ import {
     Route,
     NavLink,
 } from 'react-router-dom';
-import Admin from "./pages/Admin";
 import Dashboard from "./pages/Dashboard";
 import NoMatch from "./pages/NoMatch";
 import {AuthProvider, useAuth} from "./context/AuthContext";
@@ -15,8 +14,6 @@ import Navigation from "./components/Navigation";
 const App = () => {
     return (
         <AuthProvider>
-            <h1>React Router</h1>
-
             <Navigation />
 
             <Routes>
@@ -30,15 +27,6 @@ const App = () => {
                         </ProtectedRoute>
                     }
                 />
-                <Route
-                    path="admin"
-                    element={
-                        <ProtectedRoute>
-                            <Admin />
-                        </ProtectedRoute>
-                    }
-                />
-
                 <Route path="*" element={<NoMatch />} />
             </Routes>
         </AuthProvider>

@@ -2,26 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="505a6969-82ab-4de4-9941-47fe11f7a028" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/api/FetchWrapper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/useApi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/authentication/ProtectedRoute.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navigation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/AuthContext.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Admin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Dashboard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/NoMatch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.job-tracker-react-ui.dir/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.job-tracker-react-ui.dir/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/JobCard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.job-tracker-react-ui.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.job-tracker-react-ui.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/useApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/useApi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/AuthContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/AuthContext.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Admin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +80,8 @@
       <workItem from="1660887553811" duration="3352000" />
       <workItem from="1660899027594" duration="2000" />
       <workItem from="1660900113489" duration="31413000" />
-      <workItem from="1660975467104" duration="7126000" />
+      <workItem from="1660975467104" duration="9621000" />
+      <workItem from="1661234763443" duration="21965000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1660742975738</created>
@@ -115,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660993647770</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Adds basic Authentication using JWT and basic Routing using react-router">
+      <created>1660994414964</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1660994414964</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <option name="searchClosedTasks" value="true" />
     <servers />
   </component>

@@ -18,13 +18,19 @@ export const AuthProvider = ({children}) => {
     useEffect(() => {
         setIsLoggedIn(localStorage["isLoggedIn"] === "true");
     }, []);
+    
+    useEffect(() => {
+        if (isLoggedIn) {
+            navigate("/dashboard");
+        }
+    }, [isLoggedIn]);
 
-    const handleLogin = async () => {
-        await logIn();
+    const handleLogin = async (email, password) => {
+        await logIn(email, password);
         setIsLoggedIn(true);
 
-        const origin = location.state?.from?.pathname || '/dashboard';
-        navigate(origin);
+        // const origin = location.state?.from?.pathname || '/dashboard';
+        // navigate(origin);
     };
 
     const handleLogout = async () => {
