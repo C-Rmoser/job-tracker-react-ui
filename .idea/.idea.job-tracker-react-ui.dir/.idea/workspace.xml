@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="505a6969-82ab-4de4-9941-47fe11f7a028" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Spinner.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Jobs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/ProjectDetails.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.job-tracker-react-ui.dir/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.job-tracker-react-ui.dir/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/_redirects" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.job-tracker-react-ui.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.job-tracker-react-ui.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/useApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/useApi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/authentication/ProtectedRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/authentication/ProtectedRoute.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/JobCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/JobCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/context/AuthContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/AuthContext.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Dashboard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/NoMatch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/NoMatch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +79,7 @@
       <workItem from="1661342843026" duration="9519000" />
       <workItem from="1661413992567" duration="7788000" />
       <workItem from="1661498200886" duration="336000" />
-      <workItem from="1661838961623" duration="207000" />
+      <workItem from="1661838961623" duration="2261000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1660742975738</created>
@@ -139,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661267575178</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Adds improvements to JWT authentication, Adds job-card view, Project Details in the works">
+      <created>1661839178859</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1661839178859</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <option name="searchClosedTasks" value="true" />
     <servers />
   </component>
