@@ -1,12 +1,11 @@
 import React, {createContext, useContext, useEffect, useState} from "react";
-import {useLocation, useNavigate} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 import {useApi} from "../api/useApi";
 
 const AuthContext = createContext(null);
 
 export const AuthProvider = ({children}) => {
     const navigate = useNavigate();
-    const location = useLocation();
     const {logIn, logOut} = useApi();
     const [isLoggedIn, _setIsLoggedIn] = useState(false)
     
@@ -21,16 +20,14 @@ export const AuthProvider = ({children}) => {
     
     useEffect(() => {
         if (isLoggedIn) {
-            navigate("/dashboard");
+            navigate("/home");
+            // eslint-disable-next-line react-hooks/exhaustive-deps
         }
     }, [isLoggedIn]);
 
     const handleLogin = async (email, password) => {
         await logIn(email, password);
         setIsLoggedIn(true);
-
-        // const origin = location.state?.from?.pathname || '/dashboard';
-        // navigate(origin);
     };
 
     const handleLogout = async () => {

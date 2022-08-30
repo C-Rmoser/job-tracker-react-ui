@@ -2,20 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="505a6969-82ab-4de4-9941-47fe11f7a028" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/JobCard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Spinner.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Jobs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/ProjectDetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.job-tracker-react-ui.dir/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.job-tracker-react-ui.dir/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.job-tracker-react-ui.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.job-tracker-react-ui.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/useApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/useApi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/authentication/ProtectedRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/authentication/ProtectedRoute.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/JobCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/JobCard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/context/AuthContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/AuthContext.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Admin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Dashboard.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/NoMatch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/NoMatch.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,6 +33,9 @@
         <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -48,7 +54,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Chris_\\AppData\\Local\\JetBrains\\Toolbox\\apps\\Rider\\ch-0\\222.3345.139\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -81,7 +87,15 @@
       <workItem from="1660899027594" duration="2000" />
       <workItem from="1660900113489" duration="31413000" />
       <workItem from="1660975467104" duration="9621000" />
-      <workItem from="1661234763443" duration="21965000" />
+      <workItem from="1661234763443" duration="23877000" />
+      <workItem from="1661322321300" duration="157000" />
+      <workItem from="1661322521593" duration="2478000" />
+      <workItem from="1661325129000" duration="417000" />
+      <workItem from="1661325736169" duration="5196000" />
+      <workItem from="1661342843026" duration="9519000" />
+      <workItem from="1661413992567" duration="7788000" />
+      <workItem from="1661498200886" duration="336000" />
+      <workItem from="1661838961623" duration="207000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1660742975738</created>
@@ -118,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660994414964</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Streamlines Authentication, Adds Login Component, Adds Navbar Component">
+      <created>1661267575178</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1661267575178</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <option name="searchClosedTasks" value="true" />
     <servers />
   </component>
@@ -141,7 +162,9 @@
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Adds Tailwind CSS to the Project" />
     <MESSAGE value="Adds basic Authentication using JWT and basic Routing using react-router" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adds basic Authentication using JWT and basic Routing using react-router" />
+    <MESSAGE value="Streamlines Authentication, Adds Login Component, Adds Navbar Component" />
+    <MESSAGE value="Adds improvements to JWT authentication, Adds job-card view, Project Details in the works" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adds improvements to JWT authentication, Adds job-card view, Project Details in the works" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

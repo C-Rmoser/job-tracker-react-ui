@@ -1,4 +1,4 @@
-﻿import {useAuth} from "../context/AuthContext";
+import {useAuth} from "../context/AuthContext";
 import {NavLink} from "react-router-dom";
 import {useState} from "react";
 import classNames from "classnames";
@@ -13,12 +13,8 @@ const Navigation = () => {
         setOpenMenu(!openMenu);
     }
 
-    return <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 md:py-8 bg-gray-900 bg-gradient-to-r from-gray-900 to-gray-800">
+    return <nav className="mb-4 bg-white border-gray-200 px-2 sm:px-4 py-2.5 md:py-8 bg-gray-900 bg-gradient-to-r from-gray-900 to-gray-800">
         <div className="container flex flex-wrap justify-between items-center mx-auto">
-            {/*<a href="https://flowbite.com/" className="flex items-center">*/}
-            {/*    <img src="https://flowbite.com/docs/images/logo.svg" className="mr-3 h-6 sm:h-9" alt="Flowbite Logo"/>*/}
-            {/*    <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>*/}
-            {/*</a>*/}
             <button onClick={handleBurgerMenuClick}
                 type="button"
                     className="inline-flex items-center p-2 ml-3 text-sm text-gray-200 hover:text-gray-100 md:hidden">
@@ -31,24 +27,20 @@ const Navigation = () => {
                 </svg>
             </button>
             <div className={classNames("w-full md:block md:w-auto", {hidden: !openMenu})} id="navbar-default">
-                <ul className="flex flex-col pt-2 px-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+                <ul className="flex flex-col pt-2 px-4 md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-medium">
                     <li>
                         <NavLink to="/home" className="block py-2 pr-4 pl-2 text-gray-300 md:p-0 hover:text-gray-100">
                             Home
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/dashboard" className="block py-2 pr-4 pl-2 text-gray-300 md:p-0 hover:text-gray-100">
-                            Dashboard
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/admin" className="block py-2 pr-4 pl-2 text-gray-300 md:p-0 hover:text-gray-100">
-                            Admin
+                        <NavLink to="/jobs" className="block py-2 pr-4 pl-2 text-gray-300 md:p-0 hover:text-gray-100">
+                            Jobs
                         </NavLink>
                     </li>
                 </ul>
             </div>
+            {<button className={classNames("btn-primary", { invisible: !isLoggedIn })} onClick={onLogout}>Logout</button>}
         </div>
     </nav>;
 };

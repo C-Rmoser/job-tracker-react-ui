@@ -2,14 +2,13 @@ import * as React from 'react';
 import {
     Routes,
     Route,
-    NavLink,
 } from 'react-router-dom';
-import Dashboard from "./pages/Dashboard";
 import NoMatch from "./pages/NoMatch";
-import {AuthProvider, useAuth} from "./context/AuthContext";
+import {AuthProvider} from "./context/AuthContext";
 import ProtectedRoute from "./authentication/ProtectedRoute";
 import Home from "./pages/Home";
 import Navigation from "./components/Navigation";
+import Jobs from "./pages/Jobs";
 
 const App = () => {
     return (
@@ -20,10 +19,10 @@ const App = () => {
                 <Route index element={<Home />} />
                 <Route path="home" element={<Home />} />
                 <Route
-                    path="dashboard"
+                    path="jobs"
                     element={
                         <ProtectedRoute>
-                            <Dashboard />
+                            <Jobs />
                         </ProtectedRoute>
                     }
                 />

@@ -1,7 +1,7 @@
 import config from "../config.json";
 import {useEffect, useState} from "react";
 import FetchWrapper from "./FetchWrapper";
-import {useLocation, useNavigate} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 
 const api = new FetchWrapper(config.API_BASE_URL);
 
@@ -27,8 +27,7 @@ export function useApi() {
 
     const getJobs = async () => {
         const token = await authenticate();
-        const jobs = await api.getAuthorized("/jobs", token);
-        return jobs;
+        return await api.getAuthorized("/jobs", token);
     }
 
     const authenticate = async () => {
@@ -85,7 +84,8 @@ export function useApi() {
     }
 
     const tokenIsValid = () => {
-        const expiresAt = new Date(Date.parse(tokenExpiresAt));
+        // Get date in UTC
+        const expiresAt = new Date(new Date(Date.parse(tokenExpiresAt)).toISOString());
         // Subtract 1 min from the current date to avoid potential issues in the future
         const now = new Date(new Date(Date.now()).setMinutes(-1));
 
@@ -93,7 +93,8 @@ export function useApi() {
     }
 
     const refreshTokenIsValid = () => {
-        const expiresAt = new Date(Date.parse(refreshTokenExpiresAt));
+        // Get date in UTC
+        const expiresAt = new Date(new Date(Date.parse(refreshTokenExpiresAt)).toISOString());
         // Subtract 1 min from the current date to avoid potential issues in the future
         const now = new Date(new Date(Date.now()).setMinutes(-1));
 

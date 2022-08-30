@@ -1,14 +1,14 @@
 import {useAuth} from "../context/AuthContext";
 import Login from "./Login";
+import ProjectDetails from "./ProjectDetails";
 
 const Home = () => {
     const {isLoggedIn} = useAuth();
 
     return (
         <div className="container mx-auto px-4">
-            <h2>Home (Public)</h2>
-
             {!isLoggedIn && <Login/>}
+            {isLoggedIn && <ProjectDetails />}
         </div>
     );
 };

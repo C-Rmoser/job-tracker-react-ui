@@ -4,7 +4,7 @@
 
 @layer components {
     .form-input {
-        @apply mb-2 p-2 outline-0 border bg-gray-100 rounded;
+        @apply p-2 outline-0 border bg-gray-100 rounded;
     }
 
     .btn-primary {
@@ -14,8 +14,8 @@
     .focus-border-blue {
         @apply focus:border-sky-700;
     }
-}
-
-body {
-
+    
+    body {
+        @apply bg-gray-300;
+    }
 }
