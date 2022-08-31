@@ -86,8 +86,9 @@ export function useApi() {
     const tokenIsValid = () => {
         // Get date in UTC
         const expiresAt = new Date(new Date(Date.parse(tokenExpiresAt)).toISOString());
-        // Subtract 1 min from the current date to avoid potential issues in the future
-        const now = new Date(new Date(Date.now()).setMinutes(-1));
+        // Subtract 1 min from the current date to avoid potential issues
+        const now = new Date();
+        now.setMinutes(now.getMinutes() - 1);
 
         return now.getTime() < expiresAt.getTime();
     }
@@ -96,7 +97,8 @@ export function useApi() {
         // Get date in UTC
         const expiresAt = new Date(new Date(Date.parse(refreshTokenExpiresAt)).toISOString());
         // Subtract 1 min from the current date to avoid potential issues in the future
-        const now = new Date(new Date(Date.now()).setMinutes(-1));
+        const now = new Date();
+        now.setMinutes(now.getMinutes() - 1);
 
         return now.getTime() < expiresAt.getTime();
     }
