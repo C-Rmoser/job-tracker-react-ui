@@ -27,12 +27,7 @@ const Jobs = () => {
         {!isLoading &&
             <span>
                 <h1 className="text-2xl text-center mb-4"> C# Jobs in Salzburg </h1>
-                <div className="container flex flex-wrap gap-4 md:gap-8 lg:gap-12 justify-center mx-auto px-4">
-                    {jobs &&
-                        jobs.map((job, index) => {
-                            return <JobCard {...job} key={index}/>
-                        })
-                    }
+                <div className="container flex flex-wrap gap-4 md:gap-8 lg:gap-12 justify-center mx-auto px-4 pb-8">
                     {jobs &&
                         jobs.map((job, index) => {
                             return <JobCard {...job} key={index}/>
