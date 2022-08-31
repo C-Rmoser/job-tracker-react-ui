@@ -7,13 +7,13 @@ class FetchWrapper {
         return fetch(this.baseURL + endpoint)
             .then(response => response.json());
     }
-    
+
     getAuthorized(endpoint, token) {
         return fetch(this.baseURL + endpoint, {
             method: "get",
             headers: {
                 "Content-Type": "application/json",
-                Authorization: `Bearer ${token}` 
+                Authorization: `Bearer ${token}`
             },
             redirect: 'follow'
         }).then(response => response.json());
@@ -22,9 +22,9 @@ class FetchWrapper {
     put(endpoint, body) {
         return this._send("put", endpoint, body);
     }
-    
+
     putAuthorized(endpoint, body, token) {
-        return this._send("put", endpoint, body, { Authorization: `Bearer ${token}` });
+        return this._send("put", endpoint, body, {Authorization: `Bearer ${token}`});
     }
 
     post(endpoint, body) {
@@ -32,17 +32,17 @@ class FetchWrapper {
     }
 
     postAuthorized(endpoint, body, token) {
-        return this._send("post", endpoint, body, { Authorization: `Bearer ${token}` });
+        return this._send("post", endpoint, body, {Authorization: `Bearer ${token}`});
     }
-    
+
     delete(endpoint, body) {
         return this._send("delete", endpoint, body);
     }
 
     deleteAuthorized(endpoint, body, token) {
-        return this._send("delete", endpoint, body, { Authorization: `Bearer ${token}` });
+        return this._send("delete", endpoint, body, {Authorization: `Bearer ${token}`});
     }
-    
+
     _send(method, endpoint, body = null, headers = null) {
         return fetch(this.baseURL + endpoint, {
             method,
@@ -52,7 +52,13 @@ class FetchWrapper {
             },
             body: JSON.stringify(body),
             redirect: 'follow'
-        }).then(response => response.json());
+        }).then(response => {
+            if (!response.ok) {
+                throw new Error(response.status.toString());
+            }
+
+            return response.json();
+        })
     }
 }
 
