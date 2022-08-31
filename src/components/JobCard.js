@@ -5,7 +5,7 @@ const JobCard = (props) => {
         <div className="text-gray-200 py-4 w-96 bg-amber-400 rounded-xl overflow-hidden bg-gray-900 bg-gradient-to-b from-gray-900 to-gray-800 shadow-xl">
             <a href={linkToDetails} target="_blank" rel="noreferrer">
                 <div className="px-4 job-title pb-2 w-full flex flex-row justify-between items-center">
-                    <h1 className="text-sky-500 ">{title}</h1>
+                    <h1 className="text-sky-500 text-lg">{title}</h1>
                     <p className="pl-4 text-gray-500 self-start">{origin}</p>
                 </div>
             </a>

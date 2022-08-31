@@ -6,7 +6,7 @@ const Home = () => {
     const {isLoggedIn} = useAuth();
 
     return (
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-8 max-w-screen-lg">
             {!isLoggedIn && <Login/>}
             {isLoggedIn && <ProjectDetails />}
         </div>
