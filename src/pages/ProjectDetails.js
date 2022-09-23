@@ -29,8 +29,7 @@ const ProjectDetails = () => {
                     <li>
                         The gathered data is now stored in the database and exposed to the web through several API
                         endpoints. At this point the API can be consumed by any type of Front-End Application (such as
-                        this
-                        one).
+                        this one).
                     </li>
                     <li>
                         <p>
